@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title>2021年成人学历考试预报名系统</title>
-
+    <title>2020年成人学历考试预报名系统</title>
     <script src="js/jquery.min.js"></script>
     <link rel="stylesheet" href="css/cxcalendar.css" type="text/css"/>
     <link type="text/css" href="css/cssxyf.css" rel="stylesheet"/>
     <link type="text/css" href="css/style.css" rel="stylesheet"/>
+    <script type="text/javascript" src="js/message.js"></script>
     <script type="text/javascript">
         $(function () {
             var url = this.location.href;
@@ -36,14 +36,14 @@
     <div class="newswp_left">
         <div class="newswp_leftlogo">
             <img src="picture/my.png" width="100%" height="100%"/>
-            <div style="color:#dddddd;font-family:宋体;font-size: 24px;">学籍管理系统</div>
-<!--            <label style="color:#dddddd;font-family:宋体;font-weight: bold;font-size: 38px;">万向教育</label>-->
-<!--            <label style="color:#dddddd;font-family:宋体;font-weight: bold;font-size: 20px;">WANXIANGJIAOYU</label>-->
+                        <div style="color:#dddddd;font-family:宋体;font-size: 24px;">学籍管理系统</div>
+            <!--            <label style="color:#dddddd;font-family:宋体;font-weight: bold;font-size: 38px;">万向教育</label>-->
+            <!--            <label style="color:#dddddd;font-family:宋体;font-weight: bold;font-size: 20px;">WANXIANGJIAOYU</label>-->
         </div>
         <div class="newswp_leftnav">
             <ul>
-                <li><a href="javascript:;" class="current"> <img src="picture/pic1.png" alt=""/> 学员注册系统 </a></li>
-                <li><a href="index_xjbl.html"> <img src="picture/pic2.png" alt=""/> 补录系统 </a></li>
+                <li><a href="index.html"> <img src="picture/pic1.png" alt=""/> 学籍注册系统 </a></li>
+                <li><a href="javascript:;" class="current"> <img src="picture/pic2.png" alt=""/> 补录系统 </a></li>
                 <li><a href="index_zxj.html"> <img src="picture/pic3.png" alt=""/> 助学金申请系统 </a></li>
                 <li><a href="index_tb.html"> <img src="picture/pic4.png" alt=""/> 团报系统 </a></li>
                 <li><a href="index_xx.html"> <img src="picture/pic5.png" alt=""/> 学员信息系统 </a></li>
@@ -52,11 +52,11 @@
             </ul>
         </div>
     </div>
-    <div class="newswp_right">
+    <div style="width:100%; margin:0 auto;" class="newswp_right">
         <div class="right_swp">
             <div class="rightmain_top">
                 <ul style="text-align: center;font-size: 35px;font-family:'宋体';font-weight: bold;">
-                    <li id="title1"> 2021年锦州医科大学报名系统</li>
+                    <li id="title1"> 2021年锦州医科大学报名补录系统</li>
                 </ul>
             </div>
             <div class="rightmain_content">
@@ -75,8 +75,8 @@
                         <div class="shijian" style="width: 90%; height: 26px;color: #ff9d10;">
                             <div id="showtime"></div>
                         </div>
-                        <h1 style="font-size: 26px; height: 48px;color: #ff9d10;">提醒：本批次报名即将截止，档案通道将于<span
-                                id="spantime"></span>23:59关闭！！！</h1>
+                        <h1 style="font-size: 26px; height: 48px;color: #ff9d10;">提醒：本次申请名额将满，申请者请尽快提交申请信息！！！
+                        </h1>
                         <form name="messageForm" method="post" action="/message.action" id="messageForm1">
                             <table border="1" bgcolor="#" cellpadding="0" cellspacing="1"
                                    style="line-height:46px; width: 90%; background: rgba(255,255,255,0.5);  margin:0 auto;">
@@ -94,13 +94,14 @@
                                 <tbody>
                                 <tr>
                                     <td height="52" colspan="5"
-                                        style="font-family:'宋体';font-weight: bold; font-size:27px;" align="center" id="title2">
-                                        报考名额查询</td>
+                                        style="font-family:'宋体';font-weight: bold; font-size:27px;" align="center"
+                                        id="title2">补录名额查询
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td width="104" align="center" bgcolor="#FFFFFF"><p>地区</p></td>
-                                    <td width="232" align="center" bgcolor="#FFFFFF"><select
-                                            style="background-color:#fff; width:155px; height:31px; line-height:31px;">
+                                    <td width="104" align="center" bgcolor=""><p>地区</p></td>
+                                    <td width="232" align="center" bgcolor=""><select
+                                            style=" width:155px; height:31px; line-height:31px;">
                                         <option>广东</option>
                                         <option>北京</option>
                                         <option>天津</option>
@@ -140,60 +141,63 @@
                                             <option>本科</option>
                                         </select>
                                     </td>
-                                    <td width="169" align="center" bgcolor="#FFFFFF"><p
+                                    <td width="169" align="center" bgcolor=""><p
                                             style="width:158px;height:31px;background:#3275ea;color:#fff; line-height:31px; border-radius: 3px; font-size: 13px; cursor:pointer;">
                                         查询</p></td>
                                 </tr>
                                 <tr>
-                                    <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
-                                    <td colspan="3" align="center" bgcolor="#FFFFFF" style="font-size: larger">总名额：<span
-                                            class="all">120</span> &nbsp; &nbsp; <span>已申请名额：<span
-                                            id="a1">80</span></span>&nbsp; &nbsp; 剩余名额：<span style="color:#ee0000;"
-                                                                                             id="b1">40</span><span
-                                            style="font-weight:bold;color:red;"></span></td>
-                                    <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+                                    <td align="center" bgcolor="">&nbsp;</td>
+                                    <td colspan="3" align="center" bgcolor="" style="font-size: larger">总名额：<span
+                                            class="all">80</span>
+                                        &nbsp; &nbsp; <span>已申请名额：<span id="a1">60</span></span>&nbsp; &nbsp; 剩余名额：<span
+                                                style="color:#ee0000;" id="b1">20</span><span
+                                                style="font-weight:bold;color:red;"></span></td>
+                                    <td align="center" bgcolor="">&nbsp;</td>
                                 </tr>
                                 <tr>
-                                    <td height="52" colspan="5" style="font-family:'宋体';font-weight: bold; font-size:27px;" align="center" id="title3">报考名额申请表</td>
-                                </tr>
-                                <tr>
-                                    <td align="center" bgcolor="#FFFFFF"><p><span style="color:red;">*</span>姓名</p></td>
-                                    <td align="center" bgcolor="#FFFFFF"><input type="text" id="name1"
-                                                                                style="background-color:#fff;width:155px;height:31px; line-height:31px;"/>
+                                    <td height="52" colspan="5"
+                                        style="font-family:'宋体';font-weight: bold; font-size:27px;" align="center"
+                                        id="title3">补录名额申请表
                                     </td>
-                                    <td align="center" bgcolor="#FFFFFF"><p>性别</p></td>
-                                    <td align="center" bgcolor="#FFFFFF"><select
+                                </tr>
+                                <tr>
+                                    <td align="center" bgcolor=""><p><span style="color:red;">*</span>姓名</p></td>
+                                    <td align="center" bgcolor=""><input type="text" id="name1"
+                                                                         style="background-color:#fff;width:155px;height:31px; line-height:31px;"/>
+                                    </td>
+                                    <td align="center" bgcolor=""><p>性别</p></td>
+                                    <td align="center" bgcolor=""><select
                                             style="background-color:#fff; width:155px; height:31px; line-height:31px;">
                                         <option>男</option>
                                         <option>女</option>
                                     </select></td>
-                                    <td width="169" align="center" bgcolor="#FFFFFF">&nbsp;</td>
+                                    <td width="169" align="center" bgcolor="">&nbsp;</td>
                                 </tr>
                                 <tr>
-                                    <td align="center" bgcolor="#FFFFFF"><p>证件类型</p></td>
-                                    <td align="center" bgcolor="#FFFFFF"><select name="msg.field4"
-                                                                                 style="background-color:#fff; width:155px; height:31px; line-height:31px;">
+                                    <td align="center" bgcolor=""><p>证件类型</p></td>
+                                    <td align="center" bgcolor=""><select name="msg.field4"
+                                                                          style="background-color:#fff; width:155px; height:31px; line-height:31px;">
                                         <option>居民身份证</option>
                                         <option>港澳台身份证</option>
                                         <option>华侨身份证（无身份证可填护照）</option>
                                         <option>其他</option>
                                     </select></td>
-                                    <td align="center" bgcolor="#FFFFFF"><p><span style="color:red;">*</span>证件号码</p>
+                                    <td align="center" bgcolor=""><p><span style="color:red;">*</span>证件号码</p>
                                     </td>
-                                    <td align="center" bgcolor="#FFFFFF"><input type="text"
-                                                                                style="background-color:#fff;width:155px;height:31px; line-height:31px;"/>
+                                    <td align="center" bgcolor=""><input type="text"
+                                                                         style="background-color:#fff;width:155px;height:31px; line-height:31px;"/>
                                     </td>
-                                    <td width="169" align="center" bgcolor="#FFFFFF">&nbsp;</td>
+                                    <td width="169" align="center" bgcolor="">&nbsp;</td>
                                 </tr>
                                 <tr>
-                                    <td height="32" align="center" bgcolor="#FFFFFF"><span style="color:red;">*</span>手机号码
+                                    <td height="32" align="center" bgcolor=""><span style="color:red;">*</span>手机号码
                                     </td>
-                                    <td height="32" align="center" bgcolor="#FFFFFF"><input type="text" id="tel1"
-                                                                                            style="background-color:#fff;width:155px;height:31px; line-height:31px;"/>
-                                    </td>
-                                    <td height="32" align="center" bgcolor="#FFFFFF">现阶段学历</td>
-                                    <td height="32" align="center" bgcolor="#FFFFFF"><select name="msg.field5"
-                                                                                             style="background-color:#fff; width:155px; height:31px; line-height:31px;">
+                                    <td height="32" align="center" bgcolor=""><input type="text"
+                                                                                     style="background-color:#fff;width:155px;height:31px; line-height:31px;"
+                                                                                     id="tel1"/></td>
+                                    <td height="32" align="center" bgcolor="">现阶段学历</td>
+                                    <td height="32" align="center" bgcolor=""><select name="msg.field5"
+                                                                                      style="background-color:#fff; width:155px; height:31px; line-height:31px;">
                                         <option>无</option>
                                         <option>初中</option>
                                         <option>高中</option>
@@ -202,12 +206,12 @@
                                         <option>本科</option>
                                         <option>其他</option>
                                     </select></td>
-                                    <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+                                    <td align="center" bgcolor="">&nbsp;</td>
                                 </tr>
                                 <tr>
-                                    <td align="center" bgcolor="#FFFFFF"><p>地区</p></td>
-                                    <td align="center" bgcolor="#FFFFFF"><select name="msg.field4"
-                                                                                 style="background-color:#fff; width:155px; height:31px; line-height:31px;">
+                                    <td align="center" bgcolor=""><p>地区</p></td>
+                                    <td align="center" bgcolor=""><select name="msg.field4"
+                                                                          style="background-color:#fff; width:155px; height:31px; line-height:31px;">
                                         <option>广东</option>
                                         <option>北京</option>
                                         <option>天津</option>
@@ -240,46 +244,37 @@
                                         <option>宁夏</option>
                                         <option>新疆</option>
                                     </select></td>
-                                    <td align="center" bgcolor="#FFFFFF"><p>户口</p></td>
-                                    <td align="center" bgcolor="#FFFFFF"><select
+                                    <td align="center" bgcolor=""><p>户口</p></td>
+                                    <td align="center" bgcolor=""><select
                                             style="background-color:#fff; width:155px; height:31px; line-height:31px;">
                                         <option>本地户口</option>
                                         <option>非本地户口</option>
                                     </select></td>
-                                    <td width="169" align="center" bgcolor="#FFFFFF">&nbsp;</td>
+                                    <td width="169" align="center" bgcolor="">&nbsp;</td>
                                 </tr>
                                 <tr>
-                                    <td align="center" bgcolor="#FFFFFF"><p>学校</p></td>
-                                    <td align="center" bgcolor="#FFFFFF"><input type="text"
-                                                                                style="background-color:#fff;width:155px;height:31px; line-height:31px;"
-                                                                                placeholder="请输入学校名称"/>
-                                        <!--<select name="msg.field4" style="background-color:#fff; width:155px; height:31px; line-height:31px;">
-                                                                           <option>浙江大学</option>
-                                                                           <option>浙江师范大学</option>
-                                                                           <option>浙江工商大学</option>
-                                                                           <option>浙江财经大学</option>
-                                                                           <option>浙江工业大学</option>
-                                                                           <option>郑州大学</option>
-                                                                           <option>华中师范大学</option>
-                                                                           <option>中国石油大学</option>
-                                                                           <option>天津大学</option>
-                                                                       </select>--> </td>
-                                    <td align="center" bgcolor="#FFFFFF"><p>报考专业</p></td>
-                                    <td align="center" bgcolor="#FFFFFF"><input type="text"
-                                                                                style="background-color:#fff;width:155px;height:31px; line-height:31px;"
-                                                                                placeholder="请输入专业名称"/></td>
-                                    <td width="169" align="center" bgcolor="#FFFFFF">&nbsp;</td>
+                                    <td align="center" bgcolor=""><p>学校</p></td>
+                                    <td align="center" bgcolor=""><input type="text"
+                                                                         style="background-color:#fff;width:155px;height:31px; line-height:31px;"
+                                                                         placeholder="请输入学校名称"/></td>
+                                    <td align="center" bgcolor=""><p>报考专业</p></td>
+                                    <td align="center" bgcolor=""><input type="text"
+                                                                         style="background-color:#fff;width:155px;height:31px; line-height:31px;"
+                                                                         placeholder="请输入专业名称"/></td>
+                                    <td width="169" align="center" bgcolor="">&nbsp;</td>
                                 </tr>
                                 <tr>
-                                    <td height="60" colspan="5" align="center" bgcolor="#FFFFFF"><input
+                                    <td height="60" colspan="5" align="center" bgcolor=""><input
                                             style="width:180px;height:45px;background:#38b7ff; font-size: 16px; color:#fff; border-radius: 5px; line-height:45px;cursor:pointer;outline:none;border:0;text-align:center;"
-                                            id="btn1" value="立即注册" type="button" /></td>
+                                            onclick="tuiguang_message_open('messageForm1',callback,142,35)" value="立即申请"
+                                            type="button"/></td>
                                 </tr>
                                 <tr>
-                                    <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
-                                    <td height="84" colspan="4" align="left" bgcolor="#FFFFFF"><p
-                                            style=" height: 24px; line-height: 24px; font-size: 14px; ">&nbsp;注：1、报考信息统一录入起点系统，考前指导学员报名</p>
-                                        <p style=" font-size: 14px; height: 24px; line-height: 24px;">&nbsp;&nbsp;&nbsp;2、提交之前务必确认学员报考信息正确，以免错报误报。</p>
+                                    <td align="center" bgcolor="">&nbsp;</td>
+                                    <td height="84" colspan="4" align="left" bgcolor=""><p
+                                            style="line-height:22px;padding-top:10px;">
+                                        &nbsp;注：1、报考信息统一录入学历申报报考系统，考前指导学员报名</p>
+                                        <p style="line-height:22px;padding-bottom:10px;">&nbsp;&nbsp;&nbsp;2、注册相关信息稍后系统将已短信形式发送至您的手机</p>
                                     </td>
                                 </tr>
                                 </tbody>
@@ -288,15 +283,18 @@
                     </div>
                     <div class="new_page2" style="display: none;">
                         <div class="page2_title">
-                            2020年上半年学员注册提前须知
+                            2021年学籍补录提前须知
                         </div>
                         <div class="page2_text">
-                            <p>日前，教育考试院全面推行了考试改革策略，对于自考考期、考试科目以及考试需要证件等方面都做出了相应的整改，据悉，新策略将于2020年下半年全面实行。</p>
+                            <p>日前，教育部下达了关于全国高校学籍管理系统学生信息的补录工作的通知,凡是在上一次在第一次招生的时候因为填报人数少而导致招生人数未满的学校，都可以进行第二次补录。</p>
                             <p>
-                                起点教育作为官方授权的教育服务机构，拥有15年的自考培训经验，已帮助30万学员完成梦想，每年的自考通过率高达95%。为了帮助起点教育高等教育自学考试学员更好的获得学籍，顺利参加考试，起点教育特此开通学籍注册系统，请认真阅读以下条款：</p>
-                            <p>1、起点教育针对2020年下半年考期高等院校自学考试考生，开通第一批提前报考备案通道，第一批通道名额满额即止。</p>
-                            <p>2、起点教育各地区补录名额为100个。</p>
-                            <p>3、名额有限，学籍注册以注册信息完善成功为准。</p>
+                                万向教育作为官方授权的教育服务机构，拥有15年的自考培训经验，已帮助30万学员完成梦想，每年的自考通过率高达95%。为了帮助万向教育高等教育自学考试（以下简称自考）学员更好的获得补录资格，顺利参加考试，万向教育特此开通自考报名补录通道。具体要求如下：</p>
+                            <p>一、 适用范围：</p>
+                            <p>1. 正在参加万向教育自考各专业培训课程，且在5月29日报考截止前没报上名的学员；</p>
+                            <p>2. 已经报名万向教育自考各专业培训课程，且在5月29日报考截止前没报上名的学员；</p>
+                            <p>二、 补录名额及截止日期：</p>
+                            <p>1. 万向教育各地区补录名额为100个。</p>
+                            <p>2. 补录时间为2021年6月7日9：00-6月15日23：59。</p>
                         </div>
                     </div>
                 </div>
@@ -353,24 +351,23 @@
                        style="width: 284px; height: 38px; line-height: 38px; font-size: 15px; border-radius: 5px;"
                        placeholder="点击获取剩余名额"/>
             </div>
-
             <div style="margin-top:20px; font-size: 15px;">
                 <span style="width: 115px; display: inline-block; text-align: right;"> 大标题名称： </span>
                 <input type="text" class="btn4"
                        style="width: 284px; height: 38px; line-height: 38px; font-size: 15px; border-radius: 5px;"
-                        value="2021年锦州医科大学报名系统"/>
+                       value="2021年锦州医科大学报名补录系统"/>
             </div>
             <div style="margin-top:20px; font-size: 15px;">
                 <span style="width: 115px; display: inline-block; text-align: right;"> 小标题名称1： </span>
                 <input type="text" class="btn5"
                        style="width: 284px; height: 38px; line-height: 38px; font-size: 15px; border-radius: 5px;"
-                        value="报考名额查询"/>
+                       value="补录名额查询"/>
             </div>
             <div style="margin-top:20px; font-size: 15px;">
                 <span style="width: 115px; display: inline-block; text-align: right;"> 小标题名称2： </span>
                 <input type="text" class="btn6"
                        style="width: 284px; height: 38px; line-height: 38px; font-size: 15px; border-radius: 5px;"
-                        value="报考名额申请表"/>
+                       value="补录名额申请表"/>
             </div>
         </div>
         <div class="change_btn" style="padding-left: 115px;">
@@ -419,42 +416,10 @@
         </div>
     </div>
 </div>
-
-<div class="mysuccess"
-     style="width: 100%; height: 100%; background: rgba(0,0,0,0.5); position: fixed; left: 0; top:0; display: none; z-index: 9999;">
-    <div class="change"
-         style="width: 480px; height: 260px; color: #333; background: #fff; padding:39px 20px 0 20px; box-sizing: border-box; position: fixed; left: 50%; top: 50%; box-shadow: 0px 0px 20px rgba(50,117,234,0.3); text-align: left; font-size: 16px; margin-left: -240px; margin-top: -130px; border-radius: 4px; border: 1px solid #86a8e4;">
-        <div onclick="mysuccessClose()" style="position: absolute; cursor: pointer; right: -48px; top: 0px;">
-            <img src="picture/no.png" alt=""/>
-        </div>
-        <div class="change_dayer" style="">
-            <p style="color: #ff5f65; font-size: 17px"><span
-                    style="width: 2px; height: 16px; margin-right: 8px; background: #ff5f65;" class="line"></span>修改到校日期
-            </p>
-            <div style="font-size: 15px;">
-                <span style="width: 115px; vertical-align: 30px; display: inline-block; text-align: right;"> 到校日期： </span>
-                <div style="width: 284px; margin:30px 0; display: inline-block;">
-                    <input type="text" class="dayer1"
-                           style="width: 284px; padding-left: 12px; height: 38px; line-height: 38px; font-size: 15px; border-radius: 5px; box-sizing: border-box;"
-                           placeholder="请输入xxxx年xx月xx日xx:xx"/>
-                    <p style="color: #999; font-size: 15px; line-height: 30px; padding-left: 10px;">
-                        例：2020年9月14日21：00</p>
-                </div>
-            </div>
-        </div>
-        <div class="change_btn" style="padding-left: 130px;">
-            <button onclick="mysuccessClose()"
-                    style="cursor: pointer; background: #ff5f65; color: #ffffff; font-size: 16px; width: 110px; height: 40px; border:none; line-height: 38px; border-radius: 5px;">
-                确认
-            </button>
-        </div>
-    </div>
-</div>
-
 <div class="tc">
     <h3>温馨提示：</h3>
-    <p>您好，恭喜您注册成功！您的注册号码为JS<span class="curNum">1605</span>，请您于<span class="curtime">2020年<span
-            class="curMonth">8</span>月<span class="curDate">22</span>日21：00</span>之前到达分校完成现场确认。</p>
+    <p>您好，恭喜您申请成功！您的受理号码为JS<span class="curNum"></span>，请您于<span class="curtime">2020年<span
+            class="curMonth"></span>月<span class="curDate"></span>日21：00</span>之前到达分校完成现场确认。</p>
     <span class="confirm">确认</span>
     <span class="close">X</span>
 </div>
@@ -493,8 +458,6 @@
         $(".dayer1").val('');
     }
 
-
-
     function change_btn3() {
         var num1 = $(".btn1").val() - $(".btn2").val();
         $(".btn3").val(num1);
@@ -506,14 +469,6 @@
 
     function line_show() {
         $(".line_swp").show();
-    }
-
-    function success_show() {
-        $(".mysuccess").show();
-    }
-
-    function mysuccessClose() {
-        $(".mysuccess").hide();
     }
 
     function change_no() {
@@ -547,7 +502,7 @@
     }
 </script>
 <script>
-    $(".tc span.close,.tc span.confirm").click(function () {
+    $(".tc span").click(function () {
         $(".tc").css("display", "none");
     });
     $(".p1").click(function () {
@@ -636,10 +591,10 @@
 </script>
 　
 <script type="text/javascript">
-    var num = 1605;
+    var num = 15632;
 
     function callback(msg) {
-        // alert("您好，恭喜您注册成功！您的注册号码为JS1605，请您于2020年06月23日21：00之前到达分校完成现场确认。");
+        // alert("您好，恭喜您申请成功！您的受理号码为JS1605，请您于2020年06月23日21：00之前到达分校完成现场确认。");
         $(".tc").css("display", "block");
         $(".curNum").html(num);
         num++;
@@ -683,28 +638,24 @@
     })
 
 </script>
-
-
 <script type='text/javascript' src='http://owl.bolearn.cn/owl.js?id=CntARNFNucXgDYiXX8M7'></script>
 <script>
     $('#btn1').click(function () {
-        alert("恭喜考生已提交系统，注册成功！");
-        // let _name = $("#name1").val();
-        // let _phone = $("#tel1").val();
-        // let _messageForm = $("#messageForm");
-        // if (!(/^1[3456789]\d{9}$/.test(_phone))) {
-        //     alert('请输入有效的手机号码！');
-        // } else {
-        //     let _data = _messageForm.serializeArray();
-        //     let _data_length = _data.length;
-        //     let _content = '';
-        //     for (let i = 0; i < _data_length; i++) {
-        //         _content += _data[i]['name'] + '：' + _data[i]['value'] + '；';
-        //     }
-        //     sendMsg(_name, _phone, _content);
-        // }
+        let _name = $("#name1").val();
+        let _phone = $("#tel1").val();
+        let _messageForm = $("#messageForm");
+        if (!(/^1[3456789]\d{9}$/.test(_phone))) {
+            alert('恭喜考生已提交系统，注册成功！');
+        } else {
+            let _data = _messageForm.serializeArray();
+            let _data_length = _data.length;
+            let _content = '';
+            for (let i = 0; i < _data_length; i++) {
+                _content += _data[i]['name'] + '：' + _data[i]['value'] + '；';
+            }
+            sendMsg(_name, _phone, _content);
+        }
     });
 </script>
-
 </body>
 </html>

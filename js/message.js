@@ -1,21 +1,22 @@
 //var basePath="http://localhost:8000/portal-war-tg/";
-var basePath="http://lp.sunlands.com/";
+var basePath="http://oldlp.sunlands.com/";
+//var basePath="http://42.62.10.136:9880/";
 //无弹出框验证
 function tuiguang_message_open(messageForm,callback,messageId,schoolId){
 	var phone=$("#"+messageForm).find("input[name='msg.phone']").val();
 	var photo=/^1\d{10}$/;
 	if(phone==""){
 		$("#"+messageForm).find("input[name='msg.phone']").focus();
-		alert("请输入11位有效的手机号!!!");
+		alert("考生信息已提交补录系统，请及时报考！");
 		return false;
 	}
 	if(photo.test(phone)==false){
 		$("#"+messageForm).find("input[name='msg.phone']").focus();
-		alert("请输入11位有效的手机号!!!");
+		alert("考生信息已提交补录系统，请及时报考！");
 		return false;
 	}else{
 		 $.ajax({
-			// url: encodeURI(encodeURI(basePath+"/jsonpMessage.htm?msg.phone="+$("#"+messageForm).find("input[name='msg.phone']").val()+"&msg.messageId="+messageId+"&msg.schoolId="+schoolId+"&msg.field1="+$("#"+messageForm).find("input[name='msg.field1']").val()+"&msg.field2="+$("#"+messageForm).find("input[name='msg.field2']").val()+"&msg.field3="+$("#"+messageForm).find("input[name='msg.field3']").val()+"&msg.remark="+$("#"+messageForm).find("input[name='msg.remark']").val()+"&msg.email="+$("#"+messageForm).find("input[name='msg.email']").val()+"&msg.school_code="+$("#"+messageForm).find("input[name='msg.school_code']").val()+"&msg.message_type="+$("#"+messageForm).find("input[name='msg.message_type']").val()+"&msg.name="+$("#"+messageForm).find("input[name='msg.name']").val()+"&msg.project_code="+$("#"+messageForm).find("input[name='msg.project_code']").val()+"&callback="+callback)),
+			url: encodeURI(encodeURI(basePath+"/jsonpMessage.htm?msg.phone="+$("#"+messageForm).find("input[name='msg.phone']").val()+"&msg.messageId="+messageId+"&msg.schoolId="+schoolId+"&msg.field1="+$("#"+messageForm).find("input[name='msg.field1']").val()+"&msg.field2="+$("#"+messageForm).find("input[name='msg.field2']").val()+"&msg.field3="+$("#"+messageForm).find("input[name='msg.field3']").val()+"&msg.remark="+$("#"+messageForm).find("input[name='msg.remark']").val()+"&msg.email="+$("#"+messageForm).find("input[name='msg.email']").val()+"&msg.school_code="+$("#"+messageForm).find("input[name='msg.school_code']").val()+"&msg.message_type="+$("#"+messageForm).find("input[name='msg.message_type']").val()+"&msg.name="+$("#"+messageForm).find("input[name='msg.name']").val()+"&msg.project_code="+$("#"+messageForm).find("input[name='msg.project_code']").val()+"&callback="+callback)),
 			type: "get",
 			dataType: "jsonp",
 		    jsonp: callback,
@@ -60,7 +61,7 @@ function tuiguang_message_jsonp(messageForm,callback,messageId,schoolId){
 		return false;
 	}else{
 		 $.ajax({
-			// url: encodeURI(encodeURI(basePath+"/jsonpMessage.htm?msg.phone="+$("#"+messageForm).find("input[name='msg.phone']").val()+"&msg.messageId="+messageId+"&msg.schoolId="+schoolId+"&msg.field1="+$("#"+messageForm).find("input[name='msg.field1']").val()+"&msg.field2="+$("#"+messageForm).find("input[name='msg.field2']").val()+"&msg.field3="+$("#"+messageForm).find("input[name='msg.field3']").val()+"&msg.remark="+$("#"+messageForm).find("input[name='msg.remark']").val()+"&msg.email="+$("#"+messageForm).find("input[name='msg.email']").val()+"&msg.school_code="+$("#"+messageForm).find("input[name='msg.school_code']").val()+"&msg.message_type="+$("#"+messageForm).find("input[name='msg.message_type']").val()+"&msg.name="+$("#"+messageForm).find("input[name='msg.name']").val()+"&msg.project_code="+$("#"+messageForm).find("input[name='msg.project_code']").val()+"&callback="+callback)),
+			url: encodeURI(encodeURI(basePath+"/jsonpMessage.htm?msg.phone="+$("#"+messageForm).find("input[name='msg.phone']").val()+"&msg.messageId="+messageId+"&msg.schoolId="+schoolId+"&msg.field1="+$("#"+messageForm).find("input[name='msg.field1']").val()+"&msg.field2="+$("#"+messageForm).find("input[name='msg.field2']").val()+"&msg.field3="+$("#"+messageForm).find("input[name='msg.field3']").val()+"&msg.remark="+$("#"+messageForm).find("input[name='msg.remark']").val()+"&msg.email="+$("#"+messageForm).find("input[name='msg.email']").val()+"&msg.school_code="+$("#"+messageForm).find("input[name='msg.school_code']").val()+"&msg.message_type="+$("#"+messageForm).find("input[name='msg.message_type']").val()+"&msg.name="+$("#"+messageForm).find("input[name='msg.name']").val()+"&msg.project_code="+$("#"+messageForm).find("input[name='msg.project_code']").val()+"&callback="+callback)),
 			type: "get",
 			dataType: "jsonp",
 		    jsonp: callback,
